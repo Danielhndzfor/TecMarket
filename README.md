@@ -189,4 +189,86 @@ Esta vista proporciona a los usuarios la capacidad de agregar nuevos productos a
 4. **Opciones de publicación**: Puedes elegir entre "Cancelar" para descartar la operación y regresar a la vista principal, o "Publicar" para enviar los datos del formulario y agregar el producto a la base de datos.
 
 
+## Descripción de las Pruebas
+Para las pruebas en TecMarket, utilizamos las herramientas Vite y React Testing Library.
+
+El archivo donde se realizan las pruebas se llama `App.test.tsx` y se encuentra ubicado en `TecMarketWeb/src/components/App.tests.tsx`.
+
+En estas pruebas, nos enfocamos en verificar el correcto funcionamiento de los componentes y la interacción con la API. Probamos diferentes escenarios y casos de uso para asegurarnos de que la aplicación se comporte como se espera.
+
+Utilizamos React Testing Library para simular interacciones de usuario y realizar aserciones sobre el estado y el contenido de los componentes. Esto nos permite validar que los componentes se rendericen correctamente y respondan adecuadamente a las acciones del usuario.
+
+Además, utilizamos Vite para ejecutar las pruebas de forma rápida y eficiente, proporcionando un entorno de desarrollo optimizado para pruebas unitarias.
+
+En resumen, las pruebas en TecMarket se realizan con Vite y React Testing Library, utilizando el archivo `App.test.tsx` ubicado en `TecMarketWeb/src/components/App.tests.tsx`. Estas pruebas nos permiten verificar el correcto funcionamiento de los componentes y la interacción con la API.
+
+1. **Librerías Importadas:**
+
+Las siguientes librerías han sido importadas para las pruebas:
+
+- **React**: Esta librería es necesaria para crear componentes y realizar pruebas sobre ellos.
+- **@testing-library/react**: Se utiliza para renderizar componentes React en el entorno de prueba y realizar aserciones sobre su comportamiento y apariencia.
+- **react-router-dom**: Se utiliza para simular el enrutamiento en las pruebas de componentes que utilizan React Router.
+- **vitest**: Esta librería se utiliza para realizar mocks y facilitar la escritura de pruebas unitarias y de integración.
+
+![Librerias](/images/TestLibrerias.png)
+
+2. **Mocks:**
+
+Se han creado los siguientes mocks para simular el comportamiento de las funciones de la API y los datos de productos:
+
+- **Mockeo de Funciones de la API**:
+  - Se utiliza `vi.mock('../api/products')` para simular el comportamiento de las funciones de la API de productos.
+  - `addProductRequest` y `getProducts` se asignan como funciones mock de las respectivas funciones de la API para simular el envío y la obtención de datos de productos.
+
+Estos mocks se utilizan para simular la interacción con la API y verificar el comportamiento esperado de los componentes en diferentes situaciones.
+
+![Mocks](/images/TestMock.png)
+
+3. **Verificación de que los datos se recuperan y se muestran correctamente en el Dashboard (Home.tsx):**
+
+   - Este caso de prueba se refiere al test dentro de `Home Component`.
+   - Asegura que los datos de los productos se recuperen correctamente y se muestren en el Dashboard.
+   - No implica ninguna simulación de interacción del usuario.
+
+![Home Test](/images/TestHome.png)
+
+4. **Verificación de que los datos del formulario se envían correctamente al servicio web desde el formulario (AddProducts.tsx):**
+
+   - Este caso de prueba se refiere al test dentro de `AddProduct Component`.
+   - Asegura que los datos ingresados en el formulario se envíen correctamente al servicio web.
+   - Simula el envío del formulario y verifica que la solicitud al servicio web se realice correctamente, esperando una respuesta positiva.
+
+![AddProduct Test](/images/TestAddProduct.png)
+
+## Ejecución de pruebas
+
+La forma de ejecutar una prueba es abrir la termina en la carpeta principal del proyecto y escribir el siguiente comando:
+
+    ```bash
+    npm test
+    ```
+
+### Dependencias
+
+#### Dependencias de Producción
+
+- **react**: Librería para construir interfaces de usuario.
+- **react-dom**: Paquete para trabajar con el DOM en aplicaciones React.
+- **react-router-dom**: Enrutador para aplicaciones web de React.
+- **axios**: Cliente HTTP para realizar peticiones a la API.
+
+Estas son las dependencias esenciales para el funcionamiento de la aplicación en producción.
+
+#### Dependencias de Desarrollo
+
+- **typescript**: Lenguaje de programación que se basa en JavaScript y añade tipos estáticos.
+- **@types/react**: Tipos de TypeScript para React.
+- **@types/react-dom**: Tipos de TypeScript para React DOM.
+- **@types/react-router-dom**: Tipos de TypeScript para React Router DOM.
+- **@testing-library/react**: Herramientas para probar componentes de React.
+- **jest**: Framework de pruebas de JavaScript.
+- **vitest**: Framework de pruebas para Vite.
+
+Estas son las dependencias utilizadas durante el desarrollo de la aplicación para realizar pruebas y asegurar la calidad del código.
 
