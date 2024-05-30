@@ -80,6 +80,7 @@ La aplicación utiliza una base de datos para almacenar la información de los p
 ====
 
 - `/.vscode`: Carpeta que puede contener archivos de configuración específicos de Visual Studio Code.
+- `/images`: Carpeta que puede contener imagenes especificas para el archivo de `README.md`.
 - `/node_modules`: Carpeta que contiene todas las dependencias del proyecto instaladas a través de npm.
 - `/src`: Carpeta principal del código fuente de la API.
 - `/TecMarketWeb`: Carpeta que contiene el código del frontend de la aplicación.
@@ -117,6 +118,75 @@ La aplicación utiliza una base de datos para almacenar la información de los p
 - `tsconfig.json`: Archivo de configuración de TypeScript.
 - `tsconfig.node.json`: Archivo de configuración de TypeScript específico para Node.js.
 - `vit.config.ts`: Archivo de configuración de Vite.
+
+
+## Prototipos de las Vistas
+
+### Home o Dashboard
+
+La vista principal de la aplicación se denomina Home o Dashboard. Aquí se presentan las tarjetas de los productos publicados, que constituyen el elemento principal de la aplicación.
+
+Esta vista es la pantalla inicial al acceder a la aplicación. Se compone de los siguientes elementos:
+
+- **Navbar**: Contiene el logo de la aplicación y el menú de navegación.
+- **Content**: En esta sección se encuentra:
+  - **Barra de búsqueda**: Permite a los usuarios buscar productos por palabras clave.
+  - **Filtro de productos**: Permite a los usuarios filtrar los productos por diferentes criterios, como categoría, precio, etc.
+  - **Tarjetas de productos**: Cada tarjeta de producto contiene:
+    - **Icono de reporte**: Permite a los usuarios reportar un producto si es necesario.
+    - **Icono de me gusta**: Permite a los usuarios expresar interés en un producto.
+    - **Imagen del producto**: Representa visualmente el producto anunciado.
+    - **Título del producto**: Describe brevemente el producto.
+    - **Precio del producto**: Indica el costo del producto.
+    - **Rating**: Muestra la calificación del producto.
+    - **Botón "Ver más"**: Aunque no tiene funcionalidad por el momento, este botón permitirá a los usuarios ver más detalles del producto.
+- **Footer**: Contiene los derechos reservados en el año actual.
+
+Esta vista proporciona a los usuarios una visión general de los productos disponibles y les permite navegar y explorar fácilmente la plataforma.
+
+![Vista Dashboard](/images/vista1.png)
+
+
+### Agregar un Producto
+
+Esta vista tiene una estructura similar al Home o Dashboard, con el mismo navbar en la parte superior. En el contenido de esta vista, se encuentra un título que indica "Agregar un Producto".
+
+#### Formulario para agregar un producto:
+
+1. **Título**: Campo de texto para ingresar el título del producto.
+2. **Descripción**: Área de texto para ingresar una descripción detallada del producto.
+3. **Precio**: Campo de texto para ingresar el precio del producto.
+4. **Stock**: Campo de texto para ingresar la cantidad disponible en stock.
+5. **Tipo de entrega**: Selección de opciones para elegir el tipo de entrega del producto (por ejemplo, envío a domicilio, retiro en tienda, etc.).
+6. **Condición**: Selección de opciones para indicar la condición del producto (nuevo, usado, reacondicionado, etc.).
+7. **Categoría**: Selección de opciones para elegir la categoría a la que pertenece el producto.
+8. **Subir imagen**: Área para subir la imagen del producto.
+9. **Botones**:
+    - **Cancelar**: Botón que permite cancelar la acción y regresar a la vista principal (Home o Dashboard).
+    - **Publicar**: Botón que permite enviar los datos del formulario a la base de datos, realizando una operación de tipo POST.
+
+Esta vista proporciona a los usuarios la capacidad de agregar nuevos productos a la plataforma de manera fácil y rápida mediante un formulario intuitivo.
+
+![Vista Publicar](/images/vista2.png)
+
+
+### Cómo utilizar las vistas
+
+#### Vista Home o Dashboard
+
+1. **Acceso a la vista**: Al iniciar la aplicación, serás redirigido automáticamente a la vista Home o Dashboard.
+2. **Exploración de productos**: En esta vista, puedes explorar los productos disponibles en la plataforma.
+3. **Navegación**: Utiliza el navbar en la parte superior para navegar a otras secciones de la aplicación.
+4. **Búsqueda y filtrado**: Utiliza la barra de búsqueda y los filtros disponibles para encontrar productos específicos según tus necesidades.
+5. **Interacción con productos**: Puedes interactuar con cada tarjeta de producto, reportando un producto si es necesario o expresando interés con el botón de "Me gusta".
+6. **Visualización detallada**: Aunque no está implementado por el momento, puedes hacer clic en el botón "Ver más" para ver detalles adicionales del producto.
+
+#### Vista Agregar un Producto
+
+1. **Acceso a la vista**: Desde la vista Home o Dashboard, utiliza la navegación para acceder a la opción de "Agregar un Producto".
+2. **Completa el formulario**: Rellena el formulario con la información del producto que deseas agregar, incluyendo título, descripción, precio, stock, tipo de entrega, condición y categoría.
+3. **Sube una imagen**: Adjunta una imagen del producto utilizando la función de carga de imágenes.
+4. **Opciones de publicación**: Puedes elegir entre "Cancelar" para descartar la operación y regresar a la vista principal, o "Publicar" para enviar los datos del formulario y agregar el producto a la base de datos.
 
 
 

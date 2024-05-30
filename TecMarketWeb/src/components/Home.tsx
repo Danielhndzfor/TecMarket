@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import styles from './Home.module.css';
 import { getProducts } from '../api/products';
 import Buscar from '../assets/buscar.svg';
