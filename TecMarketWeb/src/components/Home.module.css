@@ -1,0 +1,165 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.productListingContainer {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.productsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 40%;
+  margin-top: 16px;
+}
+
+.buscador {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* Espacio entre el input y el botón */
+}
+
+.inputBuscar {
+  flex-grow: 1;
+  /* Para que el input ocupe el espacio disponible */
+  padding: 15px 20px;
+  /* Reducir padding para una mejor alineación */
+  border-radius: 8px;
+  border: 2px solid #315E51;
+}
+
+.inputBuscar::placeholder {
+  color: #315E51;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+.btnBuscar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  /* Reducir padding para una mejor alineación */
+  border-radius: 100px;
+  border: 2px solid #315E51;
+  background-color: #315E51;
+  color: white;
+  cursor: pointer;
+}
+
+.icoBuscar {
+  width: 30px;
+  /* Ajustar tamaño para una mejor alineación */
+  height: 30px;
+  /* Ajustar tamaño para una mejor alineación */
+}
+
+.filtro {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* Espacio entre el label y el select */
+}
+
+.filtro label {
+  font-weight: bold;
+}
+
+.filtro select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #315E51;
+}
+
+/*home*/
+
+.productCard {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  position: relative;
+  width: 200px;
+  margin: 16px;
+}
+
+.productCardHover {
+  transform: scale(1.05);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+}
+
+.warningIcon,
+.likeIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.mainImage {
+  max-width: 80%;
+  min-height: 50%;
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+.productTitle {
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+.productPrice {
+  font-size: 1em;
+  color: #666;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.rating {
+  font-size: 0.8em;
+  color: #666;
+}
+
+.viewMoreButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.viewMoreButton:hover {
+  background-color: #0056b3;
+}
