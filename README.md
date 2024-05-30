@@ -17,19 +17,19 @@ Para instalar y configurar TecMarket, sigue estos pasos:
 
 1. Clona el repositorio desde GitHub:
     ```bash
-    git clone <URL_DEL_REPOSITORIO>
+    git clone https://github.com/Danielhndzfor/TecMarket.git
     ```
 
 2. Navega al directorio del proyecto:
     ```bash
-    cd <NOMBRE_DEL_DIRECTORIO>
+    cd TecMarketBack
     ```
 
 ### Instalación de la API
 
 3. Navega al directorio de la API:
     ```bash
-    cd src
+    cd TecMarketBack
     ```
 
 4. Instala las dependencias necesarias:
@@ -37,38 +37,82 @@ Para instalar y configurar TecMarket, sigue estos pasos:
     npm install
     ```
 
-5. Configura el archivo de entorno `.env` con las variables necesarias (consulta el archivo `.env.example` para más detalles).
-
-6. Inicia la API:
+5. Inicia la API:
     ```bash
-    npm start
+    npm run dev
     ```
 
 ### Instalación del Front-end
 
-7. Navega al directorio del front-end:
+6. Navega al directorio del front-end:
     ```bash
     cd TecMarketWeb
     ```
 
-8. Instala las dependencias necesarias:
+7. Instala las dependencias necesarias:
     ```bash
     npm install
     ```
 
-9. Configura el archivo de entorno `.env` con las variables necesarias (consulta el archivo `.env.example` para más detalles).
-
-10. Inicia el proyecto:
+8. Inicia el proyecto:
     ```bash
-    npm start
+    npm run dev
     ```
 
 Con estos pasos, deberías tener tanto la API como el front-end de TecMarket en funcionamiento.
 
 ## Descripción del Proyecto
 
-Detalles sobre el propósito y las funcionalidades de TecMarket.
+TecMarket es una aplicación web que permite a los estudiantes de educación superior comprar y vender productos entre sí. La aplicación se divide en dos partes: la API y el front-end.
+
+La API es responsable de manejar las solicitudes y respuestas de la aplicación, así como de interactuar con la base de datos. Está construida con Express y JavaScript.
+
+El front-end es la interfaz de usuario de la aplicación, donde los usuarios pueden publicar productos, ver los productos publicados por otros usuarios y realizar compras. Está construido con React y TypeScript.
+
+La aplicación utiliza una base de datos para almacenar la información de los productos y los usuarios. La base de datos es accedida a través de la API.
+
 
 ## Estructura del Proyecto
 
-La estructura principal del proyecto es la siguiente:
+### Estructura de la API
+**API**
+====
+* /.vscode
+* /node_modules
+* /src
+* /TecMarketWeb (Frontend)
+*.gitignore
+* package-lock.json
+* README.md
+
+### Estructura del front
+**FRONT**
+======
+* /public
+* /src
+	+ /api
+		- product.tsx
+	+ /assets
+	+ /components
+		- AddProducts.module.css
+		- AddProducts.tsx
+		- App.test.tsx
+		- Home.module.css
+		- Home.tsx
+	+ App.tsx
+	+ Footer.css
+	+ Footer.tsx
+	+ main.tsx
+	+ nav.css
+	+ setupTests.ts
+	+ vite-env.d.ts
+*.eslintrc.cjs
+*.gitignore
+* index.html
+* package-lock.json
+* package.json
+* tsconfig.json
+* tsconfig.node.json
+* vit.config.ts
+
+
