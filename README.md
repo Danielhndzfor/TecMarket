@@ -75,108 +75,48 @@ La aplicación utiliza una base de datos para almacenar la información de los p
 ## Estructura del Proyecto
 
 ### Estructura de la API
+
 **API**
 ====
-### /.vscode
-Configuración de Visual Studio Code para el proyecto.
 
-### /node_modules
-Carpeta que contiene las dependencias del proyecto instaladas con npm.
+- `/.vscode`: Carpeta que puede contener archivos de configuración específicos de Visual Studio Code.
+- `/node_modules`: Carpeta que contiene todas las dependencias del proyecto instaladas a través de npm.
+- `/src`: Carpeta principal del código fuente de la API.
+- `/TecMarketWeb`: Carpeta que contiene el código del frontend de la aplicación.
+- `.gitignore`: Archivo que especifica los archivos y directorios que Git debe ignorar.
+- `package-lock.json`: Archivo generado automáticamente que registra las versiones exactas de todas las dependencias npm instaladas.
+- `README.md`: Archivo de documentación principal del proyecto.
 
-### /src
-Carpeta que contiene el código fuente de la API.
+### Estructura del front
 
-### /TecMarketWeb (Frontend)
-Carpeta que contiene el frontend de la aplicación.
-
-###.gitignore
-Archivo que especifica los archivos y carpetas que se deben ignorar en el repositorio de Git.
-
-### package-lock.json
-Archivo que contiene la información de las dependencias del proyecto y sus versiones.
-
-### README.md
-Archivo que contiene información general sobre el proyecto.
-
-### Estructura del Front
 **FRONT**
 ======
-### /public
-Carpeta que contiene los archivos estáticos de la aplicación.
 
-### /src
-Carpeta que contiene el código fuente del frontend.
+- `/public`: Carpeta que contiene los archivos estáticos que se servirán públicamente, como HTML, imágenes, etc.
+- `/src`: Carpeta principal del código fuente del frontend.
+    + `/api`: Carpeta que contiene los archivos relacionados con la comunicación con la API, como `product.tsx`.
+    + `/assets`: Carpeta que puede contener recursos estáticos como imágenes, fuentes, etc.
+    + `/components`: Carpeta que contiene los componentes de React de la aplicación.
+        - `AddProducts.module.css`: Archivo de estilos para el componente `AddProducts`.
+        - `AddProducts.tsx`: Componente React para agregar productos.
+        - `App.test.tsx`: Archivo de pruebas para el componente principal de la aplicación.
+        - `Home.module.css`: Archivo de estilos para el componente `Home`.
+        - `Home.tsx`: Componente React para la página de inicio.
+    - `App.tsx`: Componente principal de la aplicación.
+    - `Footer.css`: Archivo de estilos para el footer de la aplicación.
+    - `Footer.tsx`: Componente React para el footer de la aplicación.
+    - `main.tsx`: Archivo principal de punto de entrada de la aplicación.
+    - `nav.css`: Archivo de estilos para la navegación de la aplicación.
+    - `setupTests.ts`: Archivo de configuración para las pruebas.
+    - `vite-env.d.ts`: Archivo de definición de tipos para Vite.
+- `.eslintrc.cjs`: Archivo de configuración de ESLint en formato CommonJS.
+- `.gitignore`: Archivo que especifica los archivos y directorios que Git debe ignorar.
+- `index.html`: Archivo HTML principal de la aplicación.
+- `package-lock.json`: Archivo generado automáticamente que registra las versiones exactas de todas las dependencias npm instaladas.
+- `package.json`: Archivo de configuración de npm que contiene las dependencias y scripts del proyecto.
+- `tsconfig.json`: Archivo de configuración de TypeScript.
+- `tsconfig.node.json`: Archivo de configuración de TypeScript específico para Node.js.
+- `vit.config.ts`: Archivo de configuración de Vite.
 
-#### /api
-Carpeta que contiene los archivos de la API del frontend.
-
-##### product.tsx
-Archivo que contiene la lógica de la API para productos.
-
-#### /assets
-Carpeta que contiene los archivos de recursos de la aplicación (imágenes, fuentes, etc.).
-
-#### /components
-Carpeta que contiene los componentes de React de la aplicación.
-
-##### AddProducts.module.css
-Archivo de estilos CSS para el componente AddProducts.
-
-##### AddProducts.tsx
-Archivo que contiene la lógica del componente AddProducts.
-
-##### App.test.tsx
-Archivo que contiene pruebas para el componente App.
-
-##### Home.module.css
-Archivo de estilos CSS para el componente Home.
-
-##### Home.tsx
-Archivo que contiene la lógica del componente Home.
-
-### App.tsx
-Archivo que contiene la lógica del componente App.
-
-### Footer.css
-Archivo de estilos CSS para el pie de página.
-
-### Footer.tsx
-Archivo que contiene la lógica del pie de página.
-
-### main.tsx
-Archivo que contiene la lógica principal de la aplicación.
-
-### nav.css
-Archivo de estilos CSS para la navegación.
-
-### setupTests.ts
-Archivo que contiene la configuración de las pruebas.
-
-### vite-env.d.ts
-Archivo que contiene la configuración del entorno de desarrollo.
-
-###.eslintrc.cjs
-Archivo que contiene la configuración de ESLint para el proyecto.
-
-###.gitignore
-Archivo que especifica los archivos y carpetas que se deben ignorar en el repositorio de Git.
-
-### index.html
-Archivo que contiene el punto de entrada de la aplicación.
-
-### package-lock.json
-Archivo que contiene la información de las dependencias del proyecto y sus versiones.
-
-### package.json
-Archivo que contiene la información del proyecto y sus dependencias.
-
-### tsconfig.json
-Archivo que contiene la configuración del compilador de TypeScript.
-
-### tsconfig.node.json
-Archivo que contiene la configuración del compilador de TypeScript para Node.js.
-
-### vit.config.ts
-Archivo que contiene la configuración de Vite para el proyecto.
 
 
