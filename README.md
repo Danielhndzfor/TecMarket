@@ -272,3 +272,14 @@ Estas son las dependencias esenciales para el funcionamiento de la aplicación e
 
 Estas son las dependencias utilizadas durante el desarrollo de la aplicación para realizar pruebas y asegurar la calidad del código.
 
+
+---
+
+**Materia:** Aplicaciones Web Modernas  
+**Título:** TecMarket  
+**Docente:** Patricia Elizabeth Figueroa Millan  
+**Autor:** Daniel Alberto Hernandez For  
+**Número de estudiante:** 20460185  
+**Programa académico:** Ingeniería Informática  
+
+---

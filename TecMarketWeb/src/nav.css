@@ -5,14 +5,11 @@ body {
     background-color: #f1f1f1;
     display: flex;
     flex-direction: column;
-    /* Alinea los elementos verticalmente */
     min-height: 100vh;
-    /* Asegura que el cuerpo ocupe al menos el alto de la ventana */
 }
 
 .content {
     flex-grow: 1;
-    /* Permite que este elemento ocupe el espacio restante */
 }
 
 .nav {
@@ -64,3 +61,21 @@ nav {
     height: 112px;
 }
 
+/* Media queries para hacer el nav responsive */
+
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .nav ul {
+        margin-top: 10px; /* Espacio entre los elementos en modo columna */
+    }
+
+    .nav li {
+        margin-right: 0;
+        margin-bottom: 10px; /* Espacio entre elementos en modo columna */
+    }
+}
