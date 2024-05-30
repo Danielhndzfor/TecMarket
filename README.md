@@ -246,8 +246,9 @@ Estos mocks se utilizan para simular la interacción con la API y verificar el c
 La forma de ejecutar una prueba es abrir la termina en la carpeta principal del proyecto.
 - Escribir el siguiente comando:
     ```bash
-    npm start
+    npm test
     ```
+
 
 ### Dependencias
 
