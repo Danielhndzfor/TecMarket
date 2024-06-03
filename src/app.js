@@ -12,7 +12,9 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: '*' // Permitir solicitudes desde todas las fuentes, ajusta según sea necesario
+}));
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

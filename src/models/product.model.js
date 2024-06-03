@@ -28,8 +28,8 @@ const productSchema = new mongoose.Schema({
     required: true,
   },
   category: {
-    type: [String], // Array de strings
-    enum: ['electronica', 'hogar', 'comida', 'postres', 'bebidas', 'ropa', 'libros', 'deportes', 'juguetes', 'belleza', 'jardineria', 'musica', 'arte', 'vehiculos', 'otros'],
+    type: String, 
+    enum: ['electronica', 'hogar', 'comida', 'postres', 'bebidas', 'ropa', 'libros', 'deportes', 'otros'],
     required: true,
   },
   images: [{
